@@ -1,0 +1,240 @@
+body {
+    max-width: 900px;
+}
+
+.player {
+    position: relative;
+    left: 270px;
+    top: 200px;
+}
+
+.head {
+    width: 40px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 100%;
+    position: relative;
+    right: -24px;
+}
+
+.body {
+    width: 90px;
+    height: 100px;
+    border: 2px solid #000000;
+    border-radius: 34%;
+}
+
+.left-hand {
+    width: 100px;
+    height: 0px;
+    border: 2px solid #000000;
+    border-radius: 10%;
+    position: relative;
+    bottom: 90px;
+    right: 90px;
+}
+
+.right-hand {
+    width: 100px;
+    height: 0px;
+    border: 2px solid black;
+    border-radius: 10%;
+    position: relative;
+    bottom: 90px;
+    right: -83px;
+}
+
+.button {
+    color: aliceblue;
+    font-family: arial;
+    width: 170px;
+    height: 80px;
+    border: 3px;
+    border-radius: 13px;
+    position: relative;
+    bottom: -100px;
+    left: 780px;
+    background-color: red;
+}
+
+.left-leg {
+    width: 0px;
+    height: 110px;
+    border: 2px solid black;
+    border-radius: 10%;
+    position: relative;
+    right: -19px;
+    bottom: 10px;
+    transition: transform 3s ease-in;
+}
+
+.right-leg {
+    width: 0px;
+    height: 110px;
+    border: 2px solid black;
+    border-radius: 10%;
+    position: relative;
+    right: -70px;
+    bottom: 124px;
+}
+
+.ball {
+    width: 60px;
+    height: 60px;
+    border: 2px solid black;
+    background-color: aqua;
+    border-radius: 100%;
+    position: relative;
+    right: -53px;
+    bottom: 187px;
+    transition: transform 5s ease-out 2s;
+}
+
+.field {
+    width: 1100px;
+    height: 1px;
+    border: 2px solid black;
+    position: relative;
+    right: 60px;
+    bottom: 187px;
+}
+
+.command:hover .left-leg {
+    transform: rotate(-45deg);
+    transform-origin: top right;
+}
+
+.command:hover .ball {
+    transform: translate(900px, -130px);
+}
+
+.comment {
+    border: 2px;
+    position: relative;
+    bottom: 370px;
+    left: 300px;
+    transition: background-color 2s 5s, width 2s 5s, height 2s 5s;
+}
+
+.comment-p {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+.command:hover .comment {
+    background-color: mediumturquoise;
+    width: 400px;
+    height: 65px;
+}
+
+/* Responsive Style for Mobile Device */
+/* Responsive Style for Mobile Device */
+
+@media screen and (max-width: 576px) {
+    .player {
+        position: relative;
+        left: 70px;
+        top: 200px;
+    }
+
+    .head {
+        width: 40px;
+        height: 40px;
+        border: 2px solid black;
+        border-radius: 100%;
+        position: relative;
+        right: -24px;
+    }
+
+    .body {
+        width: 90px;
+        height: 100px;
+        border: 2px solid #000000;
+        border-radius: 34%;
+    }
+
+    .left-hand {
+        width: 100px;
+        height: 0px;
+        border: 2px solid #000000;
+        border-radius: 10%;
+        position: relative;
+        bottom: 90px;
+        right: 90px;
+    }
+
+    .right-hand {
+        width: 100px;
+        height: 0px;
+        border: 2px solid black;
+        border-radius: 10%;
+        position: relative;
+        bottom: 90px;
+        right: -83px;
+    }
+
+    .button {
+        color: aliceblue;
+        font-family: arial;
+        width: 170px;
+        height: 80px;
+        border: 3px;
+        border-radius: 13px;
+        position: relative;
+        bottom: -100px;
+        left: 780px;
+        background-color: red;
+    }
+
+    .left-leg {
+        width: 0px;
+        height: 110px;
+        border: 2px solid black;
+        border-radius: 10%;
+        position: relative;
+        right: -19px;
+        bottom: 10px;
+        transition: transform 3s ease-in;
+    }
+
+    .right-leg {
+        width: 0px;
+        height: 110px;
+        border: 2px solid black;
+        border-radius: 10%;
+        position: relative;
+        right: -70px;
+        bottom: 124px;
+    }
+
+    .ball {
+        width: 60px;
+        height: 60px;
+        border: 2px solid black;
+        background-color: aqua;
+        border-radius: 100%;
+        position: relative;
+        right: -53px;
+        bottom: 187px;
+        transition: transform 5s ease-out 2s;
+    }
+
+    .field {
+        width: 1000px;
+        height: 1px;
+        border: 2px solid black;
+        position: relative;
+        right: 100px;
+        bottom: 187px;
+    }
+
+    .command:hover .left-leg {
+        transform: rotate(-45deg);
+        transform-origin: top right;
+    }
+
+    .command:hover .ball {
+        transform: translate(900px, -130px);
+    }
+}
